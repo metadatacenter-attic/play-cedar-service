@@ -12,19 +12,19 @@ the Play-based functionality of a service from it core application logic.
 
 The Maven build is expecting two subdirectories containing the core server code and the Play-based code, respectively.
 These two subdirectories should be named using the artifact ID in the base POM.
-The sub-project <artifactId>-core contains all non Play server code; the <artifactId>-play contains Play-based functionality.
+The sub-project named \<artifactId\>-core contains all non Play server code; the \<artifactId\>-play sub-project contains Play-based functionality.
 
 The steps for taking this project and using it as the basis for a new CEDAR project are:
 
 * Clone the project using Git
-* Rename the base directory from play-cedar-service to \<new-service\>;
-* Edit the base POM and change the artifact ID from cedar-service to \<new-service\>;
-  also change the module names in the <modules> section from cedar-service-{core,play} to \<new-service\>-{core,play}
-* Rename the core subdirectory from cedar-service-core to \<new-service\>-core
-* Edit the POM in the core subdirectory and change the artifact ID from cedar-service-core to \<new-service\>-core;
-  change the parent artifact ID from cedar-service to \<new-service\>
-* Rename the Play subdirectory from cedar-service play to \<new-service\>-play
-* Edit the POM in the Play subdirectory and change the artifact ID from cedar-service-play to \<new-service\>-play;
-  change the parent artifact ID from cedar-service to \<new-service\>. Also change the artifact ID of the core
-  dependency from cedar-service-core to \<new-service\>-core.
+* Rename the base directory from `play-cedar-service` to \<new-service\>
+* Edit the base POM and change the artifact ID from `cedar-service` to \<new-service\>;
+  also change the module names in the <modules> section from `cedar-service-{core,play}` to \<new-service\>`-{core,play}`
+* Rename the core subdirectory from `cedar-service-core` to \<new-service\>`-core`
+* Edit the POM in the core subdirectory and change the artifact ID from `cedar-service-core` to \<new-service\>`-core`;
+  change the parent artifact ID from `cedar-service` to \<new-service\>
+* Rename the Play subdirectory from `cedar-service-play` to \<new-service\>`-play`
+* Edit the POM in the Play subdirectory and change the artifact ID from `cedar-service-play` to \<new-service\>`-play`;
+  change the parent artifact ID from `cedar-service` to \<new-service\>. Also change the artifact ID of the core
+  dependency from `cedar-service-core` to \<new-service\>`-core`.
 
