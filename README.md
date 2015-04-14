@@ -17,7 +17,7 @@ The sub-project <artifactId>-core contains all non Play server code; the <artifa
 The steps for taking this project and using it as the basis for a new CEDAR project are:
 
 * Clone the project using Git
-* Rename the base directory from play-cedar-service to <new-service>;
+* Rename the base directory from play-cedar-service to '<new-service>';
 * Edit the base POM and change the artifact ID from cedar-service to <new-service>;
   also change the module names in the <modules> section from cedar-service-{core,play} to <new-service>-{core,play}
 * Rename the core subdirectory from cedar-service-core to <new-service>-core
