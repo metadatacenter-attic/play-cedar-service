@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.metadatacenter</groupId>
+  <artifactId>cedar-service</artifactId>
+  <name>CEDAR Play-based Service Template</name>
+  <description>CEDAR Play-based Service Template. Allows Maven to be used for dependency management.</description>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>cedar-service-core</module>
+    <module>cedar-service-play</module>
+  </modules>
+
+  <properties>
+
+    <java.version>1.8</java.version>
+    <scala.version>2.11.5</scala.version>
+    <scala.dependencies.version>2.11</scala.dependencies.version>
+    <play2.version>2.3.8</play2.version>
+    <play2.scala.version>2.11</play2.scala.version>
+    <apache.httpclient.version>4.4.1</apache.httpclient.version>
+
+    <scala.maven.plugin.version>3.1.6</scala.maven.plugin.version>
+    <play2.maven.plugin.version>1.0.0-beta1</play2.maven.plugin.version>
+    <maven.surefire.plugin.version>2.16</maven.surefire.plugin.version>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>${scala.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>
